@@ -28,7 +28,6 @@ phpunit.phar
 
 /tests
 /runtime
-/html
 /web/assets
 
 
