@@ -20,4 +20,12 @@ return [
         'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => require(__DIR__ . '/params.php'),
+    'controllerMap' => [
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationTable' => 'yii2_migrations',
+            'migrationPath' => __DIR__ . '/../../migrations',
+            'interactive' => false
+        ],
+    ],
 ];
