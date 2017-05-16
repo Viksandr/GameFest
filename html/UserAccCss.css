@@ -1,0 +1,581 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, tt, var, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a img {
+    border:none;
+    outline:none;
+}
+body{
+    margin:0 auto;
+    width:100%;
+    background-color: #f9fbfa;
+}
+
+#categories
+{
+    width:100%;
+    height:900px;
+    font-family: 'Neucha', cursive;
+    font-weight:bold;
+    margin:0 auto;
+    position:relative;
+}
+
+.tabs{
+    min-width: 320px;
+    max-width: 1100px;
+        padding-top: 80px;
+        margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>div{
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #9CA3DA;
+}
+.tabs>div>p{
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs>input{
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label{
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #9CA3DA;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before{
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs>label:hover{
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label{
+    color: #555;
+    border-top: 3px solid #9CA3DA;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    padding-top:13px;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+    display: block;
+}
+
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+    .tabs>label{
+        font-size: 0;
+    }
+    .tabs>label:before{
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+    .tabs>label {
+        padding: 15px;
+    }
+}
+
+
+
+
+#content-tab1 input[type="text"]
+{
+    outline:none;
+}
+
+
+
+
+/* Стили секций с содержанием */
+.tabs1-1>div {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #9CA3DA;
+}
+.tabs1-1>div>p{
+    margin: 25px 0 5px;
+    line-height: 1.5;
+    color: white;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+#content-tab1 input[type="button"],#content-tab2 input[type="button"]
+{
+    margin-top:30px;
+    padding:15px 41px 15px 43px;
+    border-radius:3px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition: 200ms;
+}
+#content-tab1 input[type="button"]:hover,#content-tab2 input[type="button"]:hover
+{
+    background:#76FF03;
+}
+
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs1-1>input {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs1-1>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #9CA3DA;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs1-1>label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs1-1>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs1-1>input:checked+label {
+    color: #555;
+    border-top: 3px solid #9CA3DA;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    padding-top:13px;
+}
+/* Активация секций с помощью псевдокласса :checked */
+
+#tab1-1:checked~#content-tab1-1, #tab2-1:checked~#content-tab2-1, #tab3-1:checked~#content-tab3-1,
+ #tab4-1:checked~#content-tab4-1, #tab5-1:checked~#content-tab5-1, #tab5-1:checked~#content-tab5-1, #tab6-1:checked~#content-tab6-1 {
+    display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+    .tabs-1>label {
+        font-size: 0;
+    }
+   .tabs-1>label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+    .tabs>label {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+/* Стили секций с содержанием */
+.tabs2-2>div {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #9CA3DA;
+}
+.tabs2-2>div>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs2-2>input {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs2-2>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #9CA3DA;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs2-2>label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs2-2>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs2-2>input:checked+label {
+    color: #555;
+    border-top: 3px solid #9CA3DA;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    padding-top:13px;
+}
+/* Активация секций с помощью псевдокласса :checked */
+
+#tab1-2:checked~#content-tab1-2, #tab2-2:checked~#content-tab2-2, #tab3-2:checked~#content-tab3-2 {
+    display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+    .tabs-2>label {
+        font-size: 0;
+    }
+   .tabs-2>label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+    .tabs>label {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+/* Стили секций с содержанием */
+.tabs3-3>div {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #9CA3DA;
+}
+.tabs3-3>div>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs3-3>input {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs3-3>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #9CA3DA;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs3-3>label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs3-3>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs3-3>input:checked+label {
+    color: #555;
+    border-top: 3px solid #9CA3DA;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    padding-top:13px;
+}
+/* Активация секций с помощью псевдокласса :checked */
+
+#tab1-3:checked~#content-tab1-3, #tab2-3:checked~#content-tab2-3, #tab3-3:checked~#content-tab3-3, #tab4-3:checked~#content-tab4-3 {
+    display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+@media screen and (max-width: 680px) {
+    .tabs-3>label {
+        font-size: 0;
+    }
+   .tabs-3>label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+    .tabs>label {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+#content-tab1-1, #content-tab1-2
+{
+    background:url(img/dota.jpg);
+    background-size:100%;
+    height:570px;
+}
+#content-tab2-1, #content-tab2-2
+{
+    background:url(img/lol.jpg);
+    background-size:100%;
+    height:570px;
+}
+#content-tab3-1
+{
+    background:url(img/hs.jpg);
+    background-size:100%;
+    height:570px;
+}
+#content-tab4-1
+{
+    background:url(img/mk9.jpg);
+    background-size:100%;
+    height:570px;
+}
+#content-tab5-1
+{
+    background:url(img/tekken.jpg);
+    background-color:black;
+    background-repeat:no-repeat;
+    background-size:100%;
+    height:570px;
+}
+#content-tab6-1
+{
+    background:url(img/DOA.jpg);
+    background-color:black;
+    background-repeat:no-repeat;
+    background-position: 0 50%;
+    background-size:100%;
+    height:570px;
+}
+#content-tab3-2
+{
+    background:url(img/csgo.jpg);
+    background-size:100%;
+    height:570px;
+}
+
+
+.Lead-team
+{
+    float:left;
+}
+.Lead-team p
+{
+    color:white;
+    margin-top:30px;
+    margin-bottom:7px;
+}
+.Other-team
+{
+    float:right;
+}
+.Other-team p
+{
+    color:white;
+    margin-top:20px;
+    margin-bottom:7px;
+    margin-right:20px;
+}
