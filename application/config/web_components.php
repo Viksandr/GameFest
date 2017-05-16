@@ -2,7 +2,7 @@
 
 return [
     'request' => [
-        'cookieValidationKey' => '',
+        'cookieValidationKey' => '123456789',
     ],
     'cache' => [
         'class' => 'yii\caching\FileCache',

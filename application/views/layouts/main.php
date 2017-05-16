@@ -41,6 +41,9 @@
                     <li><a href="#" class="second-a">Стенды</a></li>
                     <li><a href="#" class="second-a">Волонтёрство</a></li>
                     <li><a href="#" class="second-a">Регламент турниров</a></li>
+                    <?php if (!Yii::$app->user->isGuest) { ?>
+                        <li><a href="#" class="second-a">Личный кабинет</a></li>
+                    <?php } ?>
                 </ul>
             </li>
             <li><a href="#" class="main-a">Новости</a></li>

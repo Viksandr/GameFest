@@ -7,7 +7,8 @@ use app\models\forms\Registration;
 use app\models\forms\Login;
 
 class UserController extends \yii\web\Controller {
-    // route = site/user/registration
+    public $enableCsrfValidation = false;
+
     public function actionRegistration() {
         $model = new Registration();
 
@@ -19,11 +20,7 @@ class UserController extends \yii\web\Controller {
             }
         }
 
-        return $this->render('/registration', [
-            'model' => $model
-            
-            
-        ]);
+        return $this->goHome();
     }
 
     public function actionLogin() {
@@ -37,19 +34,16 @@ class UserController extends \yii\web\Controller {
             }
         }
 
-        return $this->render('/login', [
-            'model' => $model
-
-
-        ]);
-
+        return $this->goHome();
     }
 
     public function actionLogout() {
-
-  \Yii::$app->user->logout();
+        \Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+
+    public function actionForgotPassword() {
 
     }
 }

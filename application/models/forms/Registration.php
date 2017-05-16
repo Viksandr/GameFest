@@ -13,7 +13,7 @@ class Registration extends \yii\base\Model
         return [
             [['login', 'password'], 'required'],
 
-            ['login', 'unique', 'targetClass' => User::className(), 'targetAttribute' => ['login'], 'on' => 'add'],
+            ['login', 'unique', 'targetClass' => User::className()],
         ];
     }
 
