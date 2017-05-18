@@ -14,7 +14,7 @@ $(document).ready(function(){
         }
     });
  });
-$('.parallax-window').parallax({imageSrc: 'img/background.jpg'});
+$('.parallax-window').parallax({imageSrc: '/img/background.jpg'});
 
 
 
