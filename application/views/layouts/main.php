@@ -42,7 +42,7 @@
                     <li><a href="#" class="second-a">Волонтёрство</a></li>
                     <li><a href="#" class="second-a">Регламент турниров</a></li>
                     <?php if (!Yii::$app->user->isGuest) { ?>
-                        <li><a href="#" class="second-a">Личный кабинет</a></li>
+                        <li><a href="<?= \yii\helpers\Url::to(['cabinet/index']) ?>" class="second-a">Личный кабинет</a></li>
                     <?php } ?>
                 </ul>
             </li>
