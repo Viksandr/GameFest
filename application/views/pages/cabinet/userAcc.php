@@ -24,7 +24,7 @@
                 <label for="tab3-1" title="Вкладка 3">HearthStone</label>
 
                 <input id="tab4-1" type="radio" name="tabs1-1">
-                <label for="tab4-1" title="Вкладка 4">Mortal Kombat</label>
+                <label for="tab4-1" title="Вкладка 4">Mortal Kombat 9</label>
 
                 <input id="tab5-1" type="radio" name="tabs1-1">
                 <label for="tab5-1" title="Вкладка 5">Tekken</label>
@@ -235,7 +235,7 @@
                 <input id="tab3-3" type="radio" name="tabs3-3">
                 <label for="tab3-3" title="Вкладка 3">Сценка</label>
 
-                <input id="tab4-3" type="radio" name="tabs  3-3">
+                <input id="tab4-3" type="radio" name="tabs3-3">
                 <label for="tab4-3" title="Вкладка 4">Караоке</label>
 
                 <div id="content-tab1-3">

@@ -7,9 +7,11 @@
             <?php if (Yii::$app->user->isGuest) { ?>
                 <input type="submit" id="go" value="Подать заявку">
             <?php } ?>
-            <form action="<?= \yii\helpers\Url::to(['cabinet/index']) ?>" style="display:inline-block">
-                <input type="submit" value="Личный кабинет">
-            </form>
+            <?php if (!Yii::$app->user->isGuest) { ?>
+                <form action="<?= \yii\helpers\Url::to(['cabinet/index']) ?>" style="display:inline-block">
+                    <input type="submit" value="Личный кабинет">
+                </form>
+            <?php } ?>
             <form action="#" style="display:inline-block">
                 <input type="submit" value="Информация">
             </form>
