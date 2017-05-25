@@ -10,9 +10,10 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 
     public function rules() {
         return [
-            [['login', 'password'], 'required'],
+            [['login', 'password', 'email'], 'required'],
             ['login', 'string', 'min' => 3, 'max' => 100],
-            ['login', 'unique'],
+            [['email'], 'email'],
+            [['login', 'email'], 'unique'],
             ['password', 'string', 'min' => 60, 'max' => 60],
             [['createdAt', 'updatedAt'], 'safe']
         ];
@@ -21,7 +22,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     public function attributeLabels() {
         return [
             'login' => 'Login',
-            'password' => 'Password',           
+            'password' => 'Password',
+            'email' => 'Email',
             'cratedAt' => 'Date created',
             'updatedAt' => 'Date updated'
         ];

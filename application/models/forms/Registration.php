@@ -8,10 +8,12 @@ class Registration extends \yii\base\Model
 {
     public $login;
     public $password;
+    public $email;
 
     public function rules() {
         return [
-            [['login', 'password'], 'required'],
+            [['login', 'password', 'email'], 'required'],
+            [['email'], 'email'],
 
             ['login', 'unique', 'targetClass' => User::className()],
         ];
@@ -21,6 +23,7 @@ class Registration extends \yii\base\Model
         return [
             'login' => 'Login',
             'password' => 'Password',
+            'email' => 'Email'
         ];
     }
 
@@ -29,6 +32,7 @@ class Registration extends \yii\base\Model
                 $user = new User();
                 $user->login = $this->login;
                 $user->password = \Yii::$app->security->generatePasswordHash($this->password);
+                $user->email = $this->email;
                 if($user->save()) {
                     return \Yii::$app->user->login($user);
                 };

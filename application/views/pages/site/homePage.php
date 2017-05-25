@@ -29,6 +29,7 @@
                 <div class="border-login"></div>
                 <p>Ещё нет аккаунта?</p>
                 <input type="text" name="Registration[login]" placeholder="Логин" value="<?= $registrationModel->login ?>"/>
+                <input type="text" name="Registration[email]" placeholder="Email" value="<?= $registrationModel->email ?>"/>
                 <input type="password" name="Registration[password]" placeholder="Пароль"/>
                 <input type="submit" class="signin-button" value="Зарегистрироваться">
             </form>
