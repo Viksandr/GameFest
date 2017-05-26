@@ -25,11 +25,11 @@
                 <input type="submit" value="Войти">
                 <a href="<?= \yii\helpers\Url::to([]) ?>">Забыли пароль?</a>
             </form>
-            <form class="signin login" method="post" action="<?= \yii\helpers\Url::to(['user/registration']) ?>">
+            <form class="signin" method="post" action="<?= \yii\helpers\Url::to(['user/registration']) ?>">
                 <div class="border-login"></div>
                 <p>Ещё нет аккаунта?</p>
-                <input type="text" name="Registration[login]" placeholder="Логин" value="<?= $registrationModel->login ?>"/>
-                <input type="text" name="Registration[email]" placeholder="Email" value="<?= $registrationModel->email ?>"/>
+                <input type="text"name="Registration[email]" placeholder="Email" value="<?= $registrationModel->email ?>"/>
+                <input type="text" style="margin-top:0;border-radius:0;border-top:none" name="Registration[login]" placeholder="Логин" value="<?= $registrationModel->login ?>"/>
                 <input type="password" name="Registration[password]" placeholder="Пароль"/>
                 <input type="submit" class="signin-button" value="Зарегистрироваться">
             </form>

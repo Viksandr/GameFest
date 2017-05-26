@@ -345,7 +345,7 @@ body{
 
 #modal_form {
 	width: 300px;
-	height: 330px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	height: 350px; /* Рaзмеры дoлжны быть фиксирoвaны */
 	border-radius: 5px;
 	border: 3px #000 solid;
 	background: #fff;
@@ -472,5 +472,49 @@ body{
 	background:white;
 	text-align:center;
 }
+.signin p
+{
+	font-size:25px;
+}
+.signin [type="text"]
+{
+	margin-top:20px;
+	outline:none;
+	border-radius:3px 3px 0 0;
+	border:2px #69f0ae solid;
+	padding:5px 15px 5px 15px;
+	width:80%;
+}
+.signin [type="password"]
+{
+	outline:none;
+	border-radius:0 0 3px 3px;
+	border:2px #69f0ae solid;
+	border-top:none;
+	padding:5px 15px 5px 15px;
+	width:80%;
+}
 
+.signin [type="submit"]
+{
+	font-family: 'Neucha', cursive;
+	font-weight:bold;
+	outline:none;
+	border-radius:3px;
+	padding:10px;
+	border:none;
+	cursor:pointer;
+	background:#69f0ae;
+	float:left;
+	margin-top:10px;
+	margin-left:30%;
+}
+.signin a
+{
+	text-decoration:none;
+	float:right;
+	margin-top:20px;
+	margin-right:55px;
+	color:black;
+}
 
