@@ -1,7 +1,7 @@
 <section id="aboutfest">
     <div class="parallax-window" data-parallax="scroll" data-image-src="/img/background.jpg">	<div class="fest">
-            <h1>ФАНТАСТИЧЕСКИЙ ФЕСТ</h1>
-            <p>Окунись в мир волшебства и веселья вместе с крупнейшим Харьковским фендом-фестивалем "ХАНИФЕСТ"! Ты просто не имеешь права пропустить столь масштабное и захватывающее действо!</p>
+            <h1>Shinsen fest</h1>
+            <p>Уникальное сочетание киберспорта и аниме индустрии, не пропусти это событие.</p>
 
 
             <?php if (Yii::$app->user->isGuest) { ?>
@@ -12,9 +12,6 @@
                     <input type="submit" value="Личный кабинет">
                 </form>
             <?php } ?>
-            <form action="#" style="display:inline-block">
-                <input type="submit" value="Информация">
-            </form>
         </div>
 
         <div id="modal_form">
@@ -38,4 +35,37 @@
         <div id="overlay"></div>
 </section>
 <section id="aboutus">
+    <div class="aboutus">
+        <p>550x280</p>
+    </div>
+    <div class="aboutus-text">
+        <span>"Shinsen" - начало.</span> <p>19 августа 2к17-го года будет первый в своем роде фестиваль, и пройдет он в мариуполе.</p>
+        <a href="<?= \yii\helpers\Url::to(['site/main']) ?>">Подробнее</a>
+    </div>
+</section>
+<section id="tournament">
+    <div class="tournament">
+        <p>550x280</p>
+    </div>
+    <div class="tournament-text">
+        <span>Tournaments</span> <p>В рамках фестиваля будут проведены турниры по командным и одиночным киберспортивным дисциплинам, а также по консольным и настольным играм.</p>
+        <a href="#">Детали</a>
+    </div>
+</section>
+<section id="cosplayShow">
+    <div class="cosplayShow">
+    </div>
+    <div class="cosplayShow-text">
+        <span>Косплей шоу</span> <p>Для всех желающих выступать, наша сцена готова к вашему выступлению, вопрос только в том - а вы готовы?</p>
+        <a href="#">Хочу участвовать</a>
+    </div>
+</section>
+<section id="programa">
+    <div class="tournament">
+        <p>550x280</p>
+    </div>
+    <div class="programa-text">
+        <span>Программа холла</span> <p>Различные стенды, ивенты и игровые зоны не дадут вам заскучать во время нашего фестиваля. А горничные в мейд кафе обслужат вас и не дадут... умереть с голоду.</p>
+        <a href="#">Узнать больше</a>
+    </div>
 </section>

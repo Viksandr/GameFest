@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 
     <?php $this->head() ?>
 </head>
@@ -26,7 +27,7 @@
             <li>
                 <a href="#" class="main-a"><i class="icon-about">О Фестивале</i></a>
                 <ul class="sub-menu">
-                    <li><a href="<?= \yii\helpers\Url::to(['site/main']) ?>" class="second-a">Оcновная информация</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/main']) ?>" class="second-a">Общая информация</a></li>
                     <li><a href="<?= \yii\helpers\Url::to(['site/progg']) ?>" class="second-a">Программа фестиваля</a></li>
                     <li><a href="<?= \yii\helpers\Url::to(['site/faq']) ?>" class="second-a">FAQ</a></li>
                     <li><a href="<?= \yii\helpers\Url::to(['site/rules']) ?>" class="second-a">Общие правила фестифаля</a></li>

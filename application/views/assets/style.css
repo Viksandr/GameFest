@@ -460,18 +460,7 @@ body{
 }
 
 
-#aboutus
-{
-	width:100%;
-	max-width:1600px;
-	height:700px;
-	padding-top: 100px;
-	font-family: 'Russo One', sans-serif;
-	font-weight:bold;
-	margin:0 auto;
-	background:white;
-	text-align:center;
-}
+
 .signin p
 {
 	font-size:25px;
@@ -518,3 +507,218 @@ body{
 	color:black;
 }
 
+
+#aboutus
+{
+	width:100%;
+	max-width:1600px;
+	height:330px;
+	padding-top: 60px;
+	font-family: 'Russo One', sans-serif;
+	font-weight:bold;
+	margin:0 auto;
+	background:white;
+}
+.aboutus
+{
+	background:gray;
+	margin-left:200px;
+	width:550px;
+	height:280px;
+	text-align:center;
+	float:left;
+}
+.aboutus p
+{
+	padding-top:150px;
+}
+
+.aboutus-text
+{
+	float:right;
+	width:550px;
+	margin-right:130px;
+	line-height:2;
+}
+.aboutus-text p
+{
+	margin-bottom:20px;
+}
+.aboutus-text a
+{
+	text-decoration:none;
+	padding:15px;
+	background:#69f0ae;
+	color:black;
+	width:100px;
+	transition:200ms;
+}
+.aboutus-text a:hover
+{
+	background:orange;
+	color:white;
+}
+
+#tournament
+{
+	width:100%;
+	max-width:1600px;
+	height:330px;
+	padding-top: 60px;
+	font-family: 'Russo One', sans-serif;
+	font-weight:bold;
+	margin:0 auto;
+	background:#dcdce2;
+}
+
+.tournament
+{
+	background:gray;
+	width:550px;
+	height:280px;
+	text-align:center;
+	margin-right:130px;
+	float:right;
+}
+.tournament p
+{
+	padding-top:150px;
+}
+
+.tournament-text
+{
+	float:left;
+	width:550px;
+	line-height:2;
+	margin-left:200px;
+}
+.tournament-text p
+{
+	margin-bottom:20px;
+}
+.tournament-text a
+{
+	text-decoration:none;
+	padding:15px;
+	background:#69f0ae;
+	color:black;
+	width:100px;
+	transition:200ms;
+}
+.tournament-text a:hover
+{
+	background:orange;
+	color:white;
+}
+
+#cosplayShow
+{
+	width:100%;
+	max-width:1600px;
+	height:330px;
+	padding-top: 60px;
+	font-family: 'Russo One', sans-serif;
+	font-weight:bold;
+	margin:0 auto;
+	background:#cce8d5;
+}
+.cosplayShow
+{
+	background:url(img/illidan.jpg);
+	background-size:100%;
+	box-shadow: 5px 5px 20px black;
+	margin-left:200px;
+	width:550px;
+	height:280px;
+	text-align:center;
+	float:left;
+}
+
+
+.cosplayShow-text
+{
+	float:right;
+	width:550px;
+	margin-right:130px;
+	line-height:2;
+}
+.cosplayShow-text p
+{
+	margin-bottom:20px;
+}
+.cosplayShow-text a
+{
+	text-decoration:none;
+	padding:15px;
+	background:#69f0ae;
+	color:black;
+	width:100px;
+	transition:200ms;
+}
+.cosplayShow-text a:hover
+{
+	background:orange;
+	color:white;
+}
+
+#programa
+{
+	width:100%;
+	max-width:1600px;
+	height:330px;
+	padding-top: 60px;
+	font-family: 'Russo One', sans-serif;
+	font-weight:bold;
+	margin:0 auto;
+	background:#e8cdcc;
+}
+
+.programa
+{
+	background:gray;
+	width:550px;
+	height:280px;
+	text-align:center;
+	margin-right:130px;
+	float:right;
+}
+.programa p
+{
+	padding-top:150px;
+}
+
+.programa-text
+{
+	float:left;
+	width:550px;
+	line-height:2;
+	margin-left:200px;
+}
+.programa-text p
+{
+	margin-bottom:20px;
+}
+.programa-text a
+{
+	text-decoration:none;
+	padding:15px;
+	background:#69f0ae;
+	color:black;
+	width:100px;
+	transition:200ms;
+}
+.programa-text a:hover
+{
+	background:orange;
+	color:white;
+}
+
+
+.mainContact
+{
+	max-width:1200px;
+	width:100%;
+	padding-top:100px;
+	margin:0 auto;	
+	font-family: 'Russo One', sans-serif;
+}
