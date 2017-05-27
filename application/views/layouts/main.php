@@ -21,33 +21,33 @@
     <div class="main-menu">
         <ul class="menu">
             <li>
-                <a href="#" class="main-a">Главная</a>
+                <a href="<?= \yii\helpers\Url::to(['site/index']) ?>" class="main-a">Главная</a>
             </li>
             <li>
                 <a href="#" class="main-a"><i class="icon-about">О Фестивале</i></a>
                 <ul class="sub-menu">
-                    <li><a href="#" class="second-a">Оcновная информация</a></li>
-                    <li><a href="#" class="second-a">Программа фестиваля</a></li>
-                    <li><a href="#" class="second-a">FAQ</a></li>
-                    <li><a href="#" class="second-a">Общие правила фестифаля</a></li>
-                    <li><a href="#" class="second-a">Партнёры</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/main']) ?>" class="second-a">Оcновная информация</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/progg']) ?>" class="second-a">Программа фестиваля</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/faq']) ?>" class="second-a">FAQ</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/rules']) ?>" class="second-a">Общие правила фестифаля</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/partners']) ?>" class="second-a">Партнёры</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#" class="main-a"><i class="icon-members">Участникам</i></a>
                 <ul class="sub-menu">
-                    <li><a href="#" class="second-a">Косплей-шоу</a></li>
-                    <li><a href="#" class="second-a">Ярмарка</a></li>
-                    <li><a href="#" class="second-a">Стенды</a></li>
-                    <li><a href="#" class="second-a">Волонтёрство</a></li>
-                    <li><a href="#" class="second-a">Регламент турниров</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/cosplay']) ?>" class="second-a">Косплей-шоу</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/fair']) ?>" class="second-a">Ярмарка</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/stands']) ?>" class="second-a">Стенды</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/volunteering']) ?>" class="second-a">Волонтёрство</a></li>
+                    <li><a href="<?= \yii\helpers\Url::to(['site/regulations']) ?>" class="second-a">Регламент турниров</a></li>
                     <?php if (!Yii::$app->user->isGuest) { ?>
                         <li><a href="<?= \yii\helpers\Url::to(['cabinet/index']) ?>" class="second-a">Личный кабинет</a></li>
                     <?php } ?>
                 </ul>
             </li>
-            <li><a href="#" class="main-a">Новости</a></li>
-            <li><a href="#" class="main-a">Контакты</a></li>
+            <li><a href="<?= \yii\helpers\Url::to(['site/news']) ?>" class="main-a">Новости</a></li>
+            <li><a href="<?= \yii\helpers\Url::to(['site/contact']) ?>" class="main-a">Контакты</a></li>
         </ul>
     </div>
     <a id="touch-menu" class="mobile-menu" href="#">

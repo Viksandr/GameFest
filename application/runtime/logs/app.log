@@ -1,0 +1,261 @@
+2017-05-27 14:04:38 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "migrate\up".' in C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate\\up', Array)
+#1 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate\\up', Array)
+#2 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\OpenServer\domains\localhost\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "migrate\up".' in C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate\\up', Array)
+#1 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\OpenServer\domains\localhost\yii(20): yii\base\Application->run()
+#3 {main}
+2017-05-27 14:04:38 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'ANSICON' => '88x10000 (88x26)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Витя\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VIKSANDRPC'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00630352'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A04C4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001F0502'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2524'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '2944'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Витя\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache-2.4-x64+Nginx-1.10\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu\\ConEmu\\Scripts;C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP-5.5-x64\\ext;c:\\openserver\\modules\\php\\PHP-5.5-x64\\pear;c:\\openserver\\modules\\php\\PHP-5.5-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.5-x64;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.5-x64\\bin;c:\\openserver\\modules\\http\\Apache-2.4-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-2.4-x64+Nginx-1.10;C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\Wbem;C:\\windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'VIKSANDRPC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'VIKSANDRPC'
+    'USERNAME' => 'Витя'
+    'USERPROFILE' => 'C:\\Users\\Витя'
+    'VS100COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\Tools\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\windows'
+    'YII_PATH' => 'c:\\OpenServer\\domains\\localhost\\'
+    'PHP_SELF' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'SCRIPT_NAME' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'SCRIPT_FILENAME' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'PATH_TRANSLATED' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1495883078.4708
+    'REQUEST_TIME' => 1495883078
+    'argv' => [
+        0 => 'c:\\OpenServer\\domains\\localhost\\yii'
+        1 => 'migrate\\up'
+    ]
+    'argc' => 2
+]
+2017-05-27 14:04:44 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'vitya-kursach'' in C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare(true)
+#6 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\mysql\Schema.php(199): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\mysql\Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Schema.php(152): yii\db\mysql\Schema->loadTableSchema('yii2_migrations')
+#10 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('yii2_migrations', true)
+#11 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(774): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(138): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('up', Array)
+#17 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('up', Array)
+#18 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#19 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#20 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\OpenServer\domains\localhost\yii(20): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'vitya-kursach'' in C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare(true)
+#4 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\mysql\Schema.php(199): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\mysql\Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\db\Schema.php(152): yii\db\mysql\Schema->loadTableSchema('yii2_migrations')
+#8 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('yii2_migrations', true)
+#9 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(774): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(138): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('up', Array)
+#15 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('up', Array)
+#16 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#17 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#18 C:\OpenServer\domains\localhost\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\OpenServer\domains\localhost\yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-05-27 14:04:44 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'AMDAPPSDKROOT' => 'C:\\Program Files (x86)\\AMD APP\\'
+    'ANSICON' => '88x10000 (88x26)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Витя\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VIKSANDRPC'
+    'ComSpec' => 'C:\\windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00630352'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '161206'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A04C4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001F0502'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2524'
+    'ConEmuPrompt0' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S$E]9;12$E\\'
+    'ConEmuServerPID' => '2944'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Витя\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MicrosoftAccount'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache-2.4-x64+Nginx-1.10\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu\\ConEmu\\Scripts;C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP-5.5-x64\\ext;c:\\openserver\\modules\\php\\PHP-5.5-x64\\pear;c:\\openserver\\modules\\php\\PHP-5.5-x64\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.5-x64;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-5.5-x64\\bin;c:\\openserver\\modules\\http\\Apache-2.4-x64+Nginx-1.10\\bin;c:\\openserver\\modules\\http\\Apache-2.4-x64+Nginx-1.10;C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\Wbem;C:\\windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.5-x64\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'VIKSANDRPC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'VIKSANDRPC'
+    'USERNAME' => 'Витя'
+    'USERPROFILE' => 'C:\\Users\\Витя'
+    'VS100COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\Tools\\'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\windows'
+    'YII_PATH' => 'c:\\OpenServer\\domains\\localhost\\'
+    'PHP_SELF' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'SCRIPT_NAME' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'SCRIPT_FILENAME' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'PATH_TRANSLATED' => 'c:\\OpenServer\\domains\\localhost\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1495883084.5615
+    'REQUEST_TIME' => 1495883084
+    'argv' => [
+        0 => 'c:\\OpenServer\\domains\\localhost\\yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
