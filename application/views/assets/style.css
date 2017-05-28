@@ -508,10 +508,11 @@ body{
 }
 
 
+
+
 #aboutus
 {
 	width:100%;
-	max-width:1600px;
 	height:330px;
 	padding-top: 60px;
 	font-family: 'Russo One', sans-serif;
@@ -522,7 +523,7 @@ body{
 .aboutus
 {
 	background:gray;
-	margin-left:200px;
+	margin-left:10px;
 	width:550px;
 	height:280px;
 	text-align:center;
@@ -537,7 +538,7 @@ body{
 {
 	float:right;
 	width:550px;
-	margin-right:130px;
+	margin-right:10px;
 	line-height:2;
 }
 .aboutus-text p
@@ -562,7 +563,6 @@ body{
 #tournament
 {
 	width:100%;
-	max-width:1600px;
 	height:330px;
 	padding-top: 60px;
 	font-family: 'Russo One', sans-serif;
@@ -577,7 +577,7 @@ body{
 	width:550px;
 	height:280px;
 	text-align:center;
-	margin-right:130px;
+	margin-right:10px;
 	float:right;
 }
 .tournament p
@@ -590,7 +590,7 @@ body{
 	float:left;
 	width:550px;
 	line-height:2;
-	margin-left:200px;
+	margin-left:10px;
 }
 .tournament-text p
 {
@@ -614,7 +614,6 @@ body{
 #cosplayShow
 {
 	width:100%;
-	max-width:1600px;
 	height:330px;
 	padding-top: 60px;
 	font-family: 'Russo One', sans-serif;
@@ -627,7 +626,7 @@ body{
 	background:url(img/illidan.jpg);
 	background-size:100%;
 	box-shadow: 5px 5px 20px black;
-	margin-left:200px;
+	margin-left:10px;
 	width:550px;
 	height:280px;
 	text-align:center;
@@ -639,7 +638,7 @@ body{
 {
 	float:right;
 	width:550px;
-	margin-right:130px;
+	margin-right:10px;
 	line-height:2;
 }
 .cosplayShow-text p
@@ -664,7 +663,6 @@ body{
 #programa
 {
 	width:100%;
-	max-width:1600px;
 	height:330px;
 	padding-top: 60px;
 	font-family: 'Russo One', sans-serif;
@@ -679,7 +677,7 @@ body{
 	width:550px;
 	height:280px;
 	text-align:center;
-	margin-right:130px;
+	margin-right:10px;
 	float:right;
 }
 .programa p
@@ -692,7 +690,7 @@ body{
 	float:left;
 	width:550px;
 	line-height:2;
-	margin-left:200px;
+	margin-left:10px;
 }
 .programa-text p
 {
@@ -721,4 +719,9 @@ body{
 	padding-top:100px;
 	margin:0 auto;	
 	font-family: 'Russo One', sans-serif;
+}
+.block
+{
+	max-width:1400px;
+	margin:0 auto;
 }

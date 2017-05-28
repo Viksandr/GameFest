@@ -35,37 +35,45 @@
         <div id="overlay"></div>
 </section>
 <section id="aboutus">
-    <div class="aboutus">
-        <p>550x280</p>
-    </div>
-    <div class="aboutus-text">
-        <span>"Shinsen" - начало.</span> <p>19 августа 2к17-го года будет первый в своем роде фестиваль, и пройдет он в мариуполе.</p>
-        <a href="<?= \yii\helpers\Url::to(['site/main']) ?>">Подробнее</a>
+    <div class="block">
+        <div class="aboutus">
+            <p>550x280</p>
+        </div>
+        <div class="aboutus-text">
+            <span>"Shinsen" - начало.</span> <p>19 августа 2к17-го года будет первый в своем роде фестиваль, и пройдет он в мариуполе.</p>
+            <a href="<?= \yii\helpers\Url::to(['site/main']) ?>">Подробнее</a>
+        </div>
     </div>
 </section>
 <section id="tournament">
-    <div class="tournament">
-        <p>550x280</p>
-    </div>
-    <div class="tournament-text">
-        <span>Tournaments</span> <p>В рамках фестиваля будут проведены турниры по командным и одиночным киберспортивным дисциплинам, а также по консольным и настольным играм.</p>
-        <a href="#">Детали</a>
+    <div class="block">
+        <div class="tournament">
+            <p>550x280</p>
+        </div>
+        <div class="tournament-text">
+            <span>Tournaments</span> <p>В рамках фестиваля будут проведены турниры по командным и одиночным киберспортивным дисциплинам, а также по консольным и настольным играм.</p>
+            <a href="#">Детали</a>
+        </div>
     </div>
 </section>
 <section id="cosplayShow">
-    <div class="cosplayShow">
-    </div>
-    <div class="cosplayShow-text">
-        <span>Косплей шоу</span> <p>Для всех желающих выступать, наша сцена готова к вашему выступлению, вопрос только в том - а вы готовы?</p>
-        <a href="#">Хочу участвовать</a>
+    <div class="block">
+        <div class="cosplayShow">
+        </div>
+        <div class="cosplayShow-text">
+            <span>Косплей шоу</span> <p>Для всех желающих выступать, наша сцена готова к вашему выступлению, вопрос только в том - а вы готовы?</p>
+            <a href="#">Хочу участвовать</a>
+        </div>
     </div>
 </section>
 <section id="programa">
-    <div class="tournament">
-        <p>550x280</p>
-    </div>
-    <div class="programa-text">
-        <span>Программа холла</span> <p>Различные стенды, ивенты и игровые зоны не дадут вам заскучать во время нашего фестиваля. А горничные в мейд кафе обслужат вас и не дадут... умереть с голоду.</p>
-        <a href="#">Узнать больше</a>
+    <div class="block">
+        <div class="tournament">
+            <p>550x280</p>
+        </div>
+        <div class="programa-text">
+            <span>Программа холла</span> <p>Различные стенды, ивенты и игровые зоны не дадут вам заскучать во время нашего фестиваля. А горничные в мейд кафе обслужат вас и не дадут... умереть с голоду.</p>
+            <a href="#">Узнать больше</a>
+        </div>
     </div>
 </section>
